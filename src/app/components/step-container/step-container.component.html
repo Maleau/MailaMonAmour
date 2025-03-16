@@ -1,0 +1,7 @@
+<main>
+    <app-step *ngFor="let step of data; let i = index"
+        [title]="'Étape ' + (i + 1)"
+        [date]="step[0]"
+        [txt]="step[1]">
+    </app-step>
+</main>

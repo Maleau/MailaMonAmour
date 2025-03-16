@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { HeaderComponent } from "./components/header/header.component";
+import { StepContainerComponent } from "./components/step-container/step-container.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
+  imports: [HeaderComponent, StepContainerComponent]
 })
 export class AppComponent {
-  title = 'MailaMonAmour-angular';
+  title = 'MailaMonAmour';
 }

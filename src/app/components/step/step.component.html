@@ -1,0 +1,15 @@
+<div class="step">
+    <div class="step-title" (click)="onClickShowContent()" [@borderRadiusAnimation]="borderRadiusState">
+        <span class="material-symbols-outlined" [@arrowAnimation]="arrowState">chevron_right</span>
+        <h2>{{title}}</h2>
+    </div>
+    
+    <div class="step-content" [@stepContentAnimation]="stepContentState">
+        <p *ngIf="!showTimer">{{txt}}</p>
+        
+        <div class="timer" *ngIf="showTimer">
+            <img src="https://cdn-icons-png.flaticon.com/512/3208/3208742.png">
+            <h3>{{timer}}</h3>
+        </div>
+    </div>
+</div>
